@@ -22,6 +22,8 @@ rgba(255, 255, 255, 0.6) - телефон и почта в футтер;
   --services-bg-color: rgba(47, 48, 58, 0.8);
   --works-bg-color: rgba(33, 150, 243, 0.9);
   --backdrop-color: rgba(0, 0, 0, 0.2);
+  --form-border-color: rgba(33, 33, 33, 0.2);
+  --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 body {
   background-color: var(--primary-white-color);
@@ -599,7 +601,7 @@ a:focus {
 /* button */
 
 .button {
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
@@ -612,8 +614,12 @@ a:focus {
 
 .button.primery {
   padding: 10px 32px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--primary-white-color);
   background-color: var(--acctent-color);
+  white-space: nowrap;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -704,4 +710,53 @@ a:focus {
   width: 18px;
   height: 18px;
   fill: currentColor;
+}
+
+/* форма */
+
+form {
+  width: 448px;
+  /* outline: 1px solid tomato; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  /* padding-bottom: 40px; */
+}
+.modal-form-title {
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 12px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+.form-field.comment {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+}
+.form-field textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-color);
 }

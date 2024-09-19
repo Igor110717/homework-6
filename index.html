@@ -441,6 +441,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -448,6 +449,46 @@
             <use href="./images/symbol-defs1.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal-form js-speaker-form">
+          <h2 class="modal-form-title">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+          <div class="form-field">
+            <label for="name" class="form-label">Имя</label>
+            <input
+              class="form-input form-control"
+              type="text"
+              name="name"
+              id="name"
+              autofocus
+            />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="name" class="form-control" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" class="form-control" />
+          </div>
+          <div class="form-field comment">
+            <label for="comment">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="form-control"
+              rows="8"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю Условия договора</label
+            >
+            <button type="submit" class="button primery">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
