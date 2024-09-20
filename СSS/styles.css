@@ -24,6 +24,7 @@ rgba(255, 255, 255, 0.6) - телефон и почта в футтер;
   --backdrop-color: rgba(0, 0, 0, 0.2);
   --form-border-color: rgba(33, 33, 33, 0.2);
   --placeholder-color: rgba(117, 117, 117, 0.5);
+  --fotter-border-form-color: rgba(255, 255, 255, 0.3);
 }
 body {
   background-color: var(--primary-white-color);
@@ -597,6 +598,45 @@ a:focus {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--acctent-color);
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-left: 93px;
+}
+.form-block .title {
+  display: block;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 72px;
+  margin-bottom: 20px;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.form-mail {
+  width: 358px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+  border: 1px solid var(--fotter-border-form-color);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.footer-form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 25;
+  letter-spacing: 0.03em;
+  color: var(--contact-info-color);
 }
 /* button */
 
